@@ -1,5 +1,15 @@
 package com.succez;
-
+/*
+ * 
+ *  测试Convert类的方法file2buf()
+ *  文件D:/test.txt中内容为：0123456789
+ *  转换成byte数组应为:[48,49,50,51,52,53,54,55,56,57]
+ *  
+ *   
+ *<p>succez<p>
+ *@author zhanagchengy
+ *@createdate 2018-4-25
+ */
 
 import java.io.File;
 

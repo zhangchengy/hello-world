@@ -1,6 +1,13 @@
 package com.succez;
 
-
+/*
+ * 10进制数转换成16进制数
+ * 用栈来存储进制上的每一位数，高位在栈顶，地位在栈底
+ * 
+ *<p>succez<p>
+ *@author zhanagchengy
+ *@createdate 2018-4-25
+ */
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -8,14 +15,6 @@ import org.junit.Test;
 
 public class IntToHex {
 
-	//public static void main(String[] args) {
-	//	// TODO Auto-generated method stub
-	//	Scanner input=new Scanner(System.in);
-	//	int number=input.nextInt();
-	//	intToHex(number);
-	//}
-	
-	
 	public  ArrayList<String> intToHex(int number){
 		ArrayList<String> list = initSqStack();
 		while(number!=0){
@@ -42,9 +41,6 @@ public class IntToHex {
 			}
 			number=number/16;
 		}
-		//while(!isEmpty(list)){
-		//	System.out.print(pop(list));
-		//}
 		return list;
 	}
 	

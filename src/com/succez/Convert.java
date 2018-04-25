@@ -1,6 +1,14 @@
 package com.succez;
 
-
+/*
+ * 
+ * 将文件内容转换成byte数组返回
+ * 
+ * 
+ *<p>succez<p>
+ *@author zhanagchengy
+ *@createdate 2018-4-25
+ */
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
