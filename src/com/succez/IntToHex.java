@@ -9,13 +9,11 @@ package com.succez;
  *@createdate 2018-4-25
  */
 import java.util.ArrayList;
-import java.util.Scanner;
-
-import org.junit.Test;
 
 public class IntToHex {
 
-	public  ArrayList<String> intToHex(int number){
+	public String intToHex(int number){
+		StringBuffer str=new StringBuffer();
 		ArrayList<String> list = initSqStack();
 		while(number!=0){
 			if(number%16<10){
@@ -41,7 +39,11 @@ public class IntToHex {
 			}
 			number=number/16;
 		}
-		return list;
+		while(!isEmpty(list)){
+			str.append(pop(list));
+		}
+		return str.toString();
+		
 	}
 	
 	//初始化栈

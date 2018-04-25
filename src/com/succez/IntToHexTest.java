@@ -8,20 +8,32 @@ package com.succez;
  *@createdate 2018-4-25
  */
 
-import java.util.ArrayList;
+
 import org.junit.Assert;
 import org.junit.Test;
 
 public class IntToHexTest {
 	IntToHex intToHex;
+	String str,expected;
 	@Test
 	public void testIntToHex() {
 		intToHex=new IntToHex();
-		ArrayList<String> list=intToHex.intToHex(31);
-		ArrayList<String> arr=new ArrayList<String>();
-		arr.add("F");
-		arr.add("1");
-		Assert.assertEquals("错误",arr,list);
+		str=intToHex.intToHex(31);
+		expected=new String("1F");
+		Assert.assertEquals("错误",expected,str);
+		
+		str=intToHex.intToHex(64);
+		expected=new String("40");
+		Assert.assertEquals("错误",expected,str);
+		
+		str=intToHex.intToHex(52);
+		expected=new String("34");
+		Assert.assertEquals("错误",expected,str);
+		
+		str=intToHex.intToHex(100);
+		expected=new String("64");
+		Assert.assertEquals("错误",expected,str);
+		
 	}
 
 }
