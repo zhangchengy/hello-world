@@ -17,9 +17,11 @@ import org.junit.Test;
 
 public class TreeBinaryTest {
 	TreeBinary treeBinary;
+	
 	@Test
 	public void test() {
-		String sBuffer= new String("GHCF");
+		String sBuffer;
+		sBuffer= new String("GHCF");
 		char ch[]={'A','B','G','#','#','H','#','#','D','C','#','#','F','#','#'};
 		ArrayList<String> list=new ArrayList<String>();
 		for(char c:ch){
@@ -29,7 +31,19 @@ public class TreeBinaryTest {
 		TNode tNode=new  TNode("#");
 		treeBinary=new TreeBinary();
 		treeBinary.createTreeBinary(tNode,it);
+		
+		sBuffer= new String("GHCF");
 		treeBinary.treeLevel(tNode,3);
+		Assert.assertEquals("错误",sBuffer,treeBinary.buffer.toString());
+		
+		sBuffer=new String("BD");
+		treeBinary.buffer=new StringBuffer();
+		treeBinary.treeLevel(tNode,2);
+		Assert.assertEquals("错误",sBuffer,treeBinary.buffer.toString());
+		
+		sBuffer=new String("A");
+		treeBinary.buffer=new StringBuffer();
+		treeBinary.treeLevel(tNode,1);
 		Assert.assertEquals("错误",sBuffer,treeBinary.buffer.toString());
 	}
 
