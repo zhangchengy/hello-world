@@ -1,0 +1,10 @@
+﻿<<<<<<< HEAD
+=======
+﻿##ignore this file##
+/target/ 
+/bin/*
+.classpath
+.project
+.settings   
+>>>>>>> branch 'master' of https://github.com/zhangchengy/hello-world/
+/bin/
