@@ -34,7 +34,6 @@ public class IntToHexTest {
 		str=intToHex.intToHex(100);
 		expected="64";
 		Assert.assertEquals("错误",expected,str);
-		
 	}
 
 }
