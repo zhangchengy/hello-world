@@ -9,6 +9,8 @@ package com.succez;
  */
 
 
+import java.io.IOException;
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -16,41 +18,28 @@ public class IntToHexTest {
 	IntToHex intToHex;
 	String str,expected;
 	@Test
-	public void testIntToHex() {
+	public void testIntToHex() throws SecurityException, IOException {
 		intToHex=new IntToHex();
-		str=intToHex.intToHex(31);
-
 		
-		expected="1F";
+		str=intToHex.intToHex(-Integer.MAX_VALUE);
+		expected="-7FFFFFFF";
 		Assert.assertEquals("错误",expected,str);
 		
-		str=intToHex.intToHex(64);
-		expected="40";
+		str=intToHex.intToHex(-64);
+		expected="-40";
 		Assert.assertEquals("错误",expected,str);
 		
-		str=intToHex.intToHex(52);
-		expected="34";
+		str=intToHex.intToHex(0);
+		expected="0";
 		Assert.assertEquals("错误",expected,str);
 		
 		str=intToHex.intToHex(100);
 		expected="64";
 		Assert.assertEquals("错误",expected,str);
-
-		expected=new String("1F");
-		Assert.assertEquals("错误",expected,str);
 		
-		str=intToHex.intToHex(64);
-		expected=new String("40");
+		str=intToHex.intToHex(Integer.MAX_VALUE);
+		expected="7FFFFFFF";
 		Assert.assertEquals("错误",expected,str);
-		
-		str=intToHex.intToHex(52);
-		expected=new String("34");
-		Assert.assertEquals("错误",expected,str);
-		
-		str=intToHex.intToHex(100);
-		expected=new String("64");
-		Assert.assertEquals("错误",expected,str);
-		
 	}
 
 }
