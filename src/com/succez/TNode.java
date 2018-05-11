@@ -7,6 +7,7 @@ package com.succez;
  *@author zhanagchengy
  *@createdate 2018-4-25
  */
+
 class TNode {
     public String value ;
     public TNode left ;

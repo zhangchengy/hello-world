@@ -13,7 +13,6 @@ package com.succez;
 import java.util.Iterator;
 
 public class TreeBinary {
-	
 	StringBuffer buffer=new StringBuffer();
     
 	//先序遍历初始化二叉树
@@ -37,7 +36,6 @@ public class TreeBinary {
     public void treeLevel(TNode treeNode,int level){
         if(treeNode!=null){
         	if(level==1){
-        		System.out.print(treeNode.value);
         		buffer.append(treeNode.value);
         	}
         	else{
@@ -48,7 +46,5 @@ public class TreeBinary {
         else{
         	return;
         }
-		
     }
-  
 }

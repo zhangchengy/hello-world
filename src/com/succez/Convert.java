@@ -14,11 +14,22 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.logging.FileHandler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 public class Convert {
-
+	Logger logger;
+	FileHandler fileHandler;
+	 public Convert() throws SecurityException, IOException{
+			logger = Logger.getLogger("testlogjava");
+			fileHandler = new FileHandler("d:\\testlog.txt",true);
+			fileHandler.setFormatter(new SimpleFormatter());
+			logger.addHandler(fileHandler);
+	 }
 	
-	public byte[] file2buf(File fobj)  
+	public byte[] file2buf(File fobj) throws IOException  
     {  
 		FileInputStream fileInputStream=null;
 		ByteArrayOutputStream bytear=null;
@@ -27,7 +38,7 @@ public class Convert {
         {    
             if (!fobj.exists())  
             {  
-                System.out.println("文件不存在");  
+                logger.log(Level.SEVERE,"文件不存在");
                 return null;  
             }  
             fileInputStream = new FileInputStream(fobj);  
@@ -42,25 +53,15 @@ public class Convert {
         }  
         catch (FileNotFoundException e)  
         {  
-            e.printStackTrace();  
+           logger.log(Level.SEVERE,e.getMessage());  
         }  
         catch (IOException e)  
         {  
-            e.printStackTrace();  
+        	logger.log(Level.SEVERE,e.getMessage());  
         }
-	finally{
-        	 try {
+        finally{
 				fileInputStream.close();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}  
-             try {
-				bytear.close();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}  
+				bytear.close();	
         } 
         return buffer;  
     }  

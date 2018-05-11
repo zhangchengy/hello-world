@@ -19,19 +19,20 @@ public class IntToHexTest {
 	public void testIntToHex() {
 		intToHex=new IntToHex();
 		str=intToHex.intToHex(31);
-		expected=new String("1F");
+		
+		expected="1F";
 		Assert.assertEquals("错误",expected,str);
 		
 		str=intToHex.intToHex(64);
-		expected=new String("40");
+		expected="40";
 		Assert.assertEquals("错误",expected,str);
 		
 		str=intToHex.intToHex(52);
-		expected=new String("34");
+		expected="34";
 		Assert.assertEquals("错误",expected,str);
 		
 		str=intToHex.intToHex(100);
-		expected=new String("64");
+		expected="64";
 		Assert.assertEquals("错误",expected,str);
 		
 	}
