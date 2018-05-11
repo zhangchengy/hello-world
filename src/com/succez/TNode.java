@@ -6,12 +6,9 @@ package com.succez;
  *<p>succez<p>
  *@author zhanagchengy
  *@createdate 2018-4-25
-<<<<<<< HEAD
  */
 
-=======
- */
->>>>>>> branch 'master' of https://github.com/zhangchengy/hello-world
+
 class TNode {
     public String value ;
     public TNode left ;

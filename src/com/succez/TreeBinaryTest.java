@@ -46,8 +46,4 @@ public class TreeBinaryTest {
 		treeBinary.treeLevel(tNode,1);
 		Assert.assertEquals("错误",sBuffer,treeBinary.buffer.toString());
 	}
-<<<<<<< HEAD
-=======
-
->>>>>>> branch 'master' of https://github.com/zhangchengy/hello-world
 }

@@ -51,7 +51,6 @@ public class IntToHexTest {
 		expected=new String("64");
 		Assert.assertEquals("错误",expected,str);
 		
->>>>>>> branch 'master' of https://github.com/zhangchengy/hello-world
 	}
 
 }
