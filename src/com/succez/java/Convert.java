@@ -1,4 +1,4 @@
-package com.succez;
+package com.succez.java;
 
 /*
  * 

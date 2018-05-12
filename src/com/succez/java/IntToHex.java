@@ -1,4 +1,4 @@
-package com.succez;
+package com.succez.java;
 
 import java.io.IOException;
 import java.util.logging.FileHandler;

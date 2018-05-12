@@ -1,4 +1,4 @@
-package com.succez;
+package com.succez.java;
 
 
 /*
@@ -14,7 +14,7 @@ import java.util.Iterator;
 
 public class TreeBinary {
 
-	StringBuffer buffer=new StringBuffer();
+	public StringBuffer buffer=new StringBuffer();
     
 	//先序遍历初始化二叉树
     public TNode createTreeBinary(TNode treeNode,Iterator<String> it){

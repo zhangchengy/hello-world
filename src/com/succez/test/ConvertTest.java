@@ -1,4 +1,4 @@
-package com.succez;
+package com.succez.test;
 /*
  * 
  *  测试Convert类的方法file2buf()
@@ -10,7 +10,7 @@ package com.succez;
  *@author zhanagchengy
  *@createdate 2018-4-25
  */
-
+import com.succez.java.Convert;
 import java.io.File;
 import java.io.IOException;
 import org.junit.Assert;

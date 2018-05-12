@@ -1,4 +1,5 @@
-package com.succez;
+package com.succez.test;
+import com.succez.java.IntToHex;
 /*
  *对IntToHex类的方法intToHex()进行测试
  *将31转换成16进制的数应该为1F

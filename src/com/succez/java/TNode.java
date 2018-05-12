@@ -1,4 +1,4 @@
-package com.succez;
+package com.succez.java;
 
 /*
  * 二叉树节点类
@@ -9,7 +9,7 @@ package com.succez;
  */
 
 
-class TNode {
+public class TNode {
     public String value ;
     public TNode left ;
     public TNode right ;

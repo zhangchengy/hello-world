@@ -1,4 +1,4 @@
-package com.succez;
+package com.succez.test;
 
 /*
  * 对TreeBinary类的方法treeLevel()测试
@@ -8,7 +8,8 @@ package com.succez;
  *@author zhanagchengy
  *@createdate 2018-4-25
  */
-
+import com.succez.java.TreeBinary;
+import com.succez.java.TNode;
 import java.util.ArrayList;
 import java.util.Iterator;
 
