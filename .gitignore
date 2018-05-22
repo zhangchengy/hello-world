@@ -1,23 +1,13 @@
-<<<<<<< HEAD
-﻿<<<<<<< HEAD
-=======
-﻿##ignore this file##
-/target/ 
+﻿/target/ 
 /bin/*
 .classpath
 .project
 .settings   
->>>>>>> branch 'master' of https://github.com/zhangchengy/hello-world/
+
 /bin/
-=======
-<<<<<<< HEAD
-=======
-﻿##ignore this file##
+
 /target/ 
 /bin/*
 .classpath
 .project
-.settings   
->>>>>>> branch 'master' of https://github.com/zhangchengy/hello-world/
-/bin/
->>>>>>> branch 'master' of https://github.com/zhangchengy/hello-world
+.settings
